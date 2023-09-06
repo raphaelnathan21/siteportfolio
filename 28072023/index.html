@@ -1,0 +1,172 @@
+<!-- Declaração de que o documento é em HTML, marcando o início do código-->
+<!DOCTYPE html>
+
+<!-- Tag html lang: especifica o idioma da página-->
+<html lang="en">
+
+<!-- Tag head: não é visualizado no corpo (body) da página, armazena os metadados-->
+
+<head>
+
+    <!-- Metadado UTF-8: considera um conjunto de caracteres presente no idioma Português (acentuação, por exemplo)-->
+    <meta charset="UTF-8">
+
+    <!-- Metadado que possibilita a visualização em navegador de dispositivo móvel -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Referencia o arquivo CSS, colocar na tag head-->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Tag title: título da guia-->
+    <title>Meu primeiro site</title>
+
+</head>
+
+<!-- Tag body: Definir o corpo do documento (conteúdo a ser visualizado)-->
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+    </style>
+
+    <!-- Cabeçalho da página-->
+    <header>
+
+        <!-- Cria uma seção de menu (navigation)-->
+        <nav>
+            <!-- Tag ul: cria uma lista desordenada, enquanto a tag
+                    ol cria uma lista ordenada-->
+            <ul id="menu">
+
+                <!-- Tag li: determina cada item-->
+
+                <!-- Tag a: possibilita que o texto seja clicável-->
+                <!-- href: determina o redirecionamento da página-->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="sobremim.html"> Sobre mim </a> </li>
+                <li><a href="#servicos"> Soluções em TI </a></li>
+                <li><a href="contato.html"> Contato </a></li>
+
+            </ul>
+
+        </nav>
+
+
+
+        <!-- Divisão em parte menor, dentro de uma seção, identificada pela palvra "apresentação"-->
+        <div class="apresentacao">
+
+            <div class="left"> 
+            <!-- Tag img: inserir imagem na página-->
+            <!-- width significa largura -->
+            <!-- height significa altura -->
+            <img src="img/lgpd2-1024x1024.png" width="50%" height="auto" alt="imagem com placa-mãe">
+        </div>
+
+        <div class="right">
+            <span> Soluções tecnológicas em </span>
+                <h1>redes de computadores e desenvolvimento web</h1>
+            <button class="btn btnContact">Entre em contato</button>
+        </div>
+
+ 
+        </div>
+    </header>
+
+
+
+
+
+        <!-- Tags h1 a h6: níveis de importância no corpo do site-->
+
+
+    <section id="servicos">
+        <h3>Assistência em redes de computadores</h3>
+        <div class="containerServicos">
+
+            <div class="itemServico1"> 
+
+                <img src="img/montagemPC/96px.png">
+                <h2>Montagem e manutenção de computadores</h2>
+
+            </div>
+
+            <div class="itemServico2">
+
+                <img src="img/redes/96px.png">
+                <h2>Implementação e configuração de redes</h2>
+
+            </div>
+
+            <div class="itemServico3">
+
+                <img src="img/configuracao/96px.png">
+                <h2>Instalação e configuração de sistemas operacionais</h2>
+
+            </div>
+
+            <div class="itemServico4">
+
+                <img src="img/SegurancaInformacao_64px.png">
+                <h2>Segurança da informação e backup</h2>
+
+            </div>
+
+
+        </div>
+        <h3>Desenvolvimento e implementação de aplicativos</h3>
+        <div class="containerServicos">
+
+            <div class="itemServico5"> 
+
+                <img src="img/prototipacao/96px.png">
+                <h2>Prototipação de aplicações</h2>
+
+            </div>
+
+            <div class="itemServico6">
+                
+                <img src="img/bancodedados/96px.png">
+                <h2>Estruturação e administração de banco de dados</h2>
+
+            </div>
+
+            <div class="itemServico7">
+
+                <img src="img/sistemadesktop/96px.png">
+                <h2>Desenvolvimento de sistemas Desktop</h2>
+
+            </div>
+
+            <div class="itemServico8">
+
+                <img src="img/desenvolversite/96px.png">
+                <h2>Desenvolvimento e hospedagem de sites</h2>
+                
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Tag hr: cria uma linha-->
+    <!--<hr>-->
+
+   <!-- <h2>Sobre mim</h2> -->
+    <!---h3>Portfólio | Developer Nathan Raphael</h3>
+    <h4>Portfólio | Developer Nathan Raphael</h4>
+    <h5>Portfólio | Developer Nathan Raphael</h5>
+    <h6>Portfólio | Developer Nathan Raphael</h6-->
+
+    <!-- Tag p: Repesentar o parágrafo-->
+   <!-- <p>Olá, world</p> -->
+
+    <!-- Tag footer: seção para identificar o rodapé-->
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

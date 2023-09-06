@@ -1,0 +1,170 @@
+/*
+margin corresponde ao espaçamento externo da caixa em que o elemento está até os cantos da página
+padding correspodente ao espaçamento interno do elemento em relação à sua própria caixa
+background corresponde ao fundo, no qual é possível colocar uma cor sólida única ou em gradiente
+
+box-sizing: content box não é uma boa prática, pois ao aumentarmos uma imagem, por exemplo, ou qualquer outro elemento, o que ocorre é que
+A CAIXA DE CONTEÚDO (em que o elemento está) aumenta e nao ele em si, causando possíveis distorções. O ideal é utilizar box-sizing:
+border-box
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#menu {
+    display: flex;
+    /*Selecionar o layout flexbox */
+    list-style: none;
+    /*Tirar as bolinhas de cada item da lista*/
+    padding: 25px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#menu a {
+    color: white;
+    /* Aplicar uma cor à fonte */
+    font-family: 'Julius Sans One', sans-serif;
+    /* Aplicar uma fonte */
+    font-size: 15px;
+    /* Aumentar o tamanho da fonte */
+    text-decoration: none;
+    /* Tirar o sublinhado do link */
+    flex-direction: row;
+    /* Alinhar um ao lado do outro */
+    margin: 19px;
+    /* Atribuir uma margin a cada item */
+    text-transform: uppercase;
+}
+
+/* Quando passar o mouse */
+#menu a:hover {
+    color: rgb(238, 174, 202);
+}
+
+header {
+    background: rgb(4,0,131);
+    background: linear-gradient(90deg, rgba(4,0,131,1) 0%, rgba(0,0,0,1) 66%);   
+    padding-bottom: 15px;
+}
+
+.apresentacao {
+    display: flex;
+}
+
+h1, span {
+    font-size: 23px;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    line-height: 170%;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 18px;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 400;
+}
+
+.right {
+    flex: 4;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.left {
+    flex: 6;
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btnContact {
+    background: rgba(7, 26, 107, 1);
+    color: white;
+    margin-top: 30px;
+}
+
+.btnContact:hover {
+    background:rgb(89, 17, 224);
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.containerServicos {
+    background: rgb(1, 0, 39);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.itemServico1, .itemServico3, .itemServico6, .itemServico8 {
+    border: 1px solid rgba(7, 26, 107, 1);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 40px 20px;
+    text-align: center;
+    width: 20%;
+
+}
+
+.itemServico2, .itemServico4, .itemServico5, .itemServico7 {
+    border: 1px solid rgb(0, 47, 255);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 40px 20px;
+    text-align: center;
+    width: 20%;
+}
+
+
+.containerServicos img {
+    width: 60px;
+}
+
+.itemServico1:hover, .itemServico3:hover, .itemServico6:hover, .itemServico8:hover {
+    border: 1px solid rgb(68, 0, 255);
+    background: rgb(14, 0, 94);
+    cursor: pointer;
+}
+
+.itemServico2:hover, .itemServico4:hover, .itemServico5:hover, .itemServico7:hover {
+    border: 1px solid rgb(68, 0, 255);
+    background: rgb(15, 0, 114);
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    background:rgb(0, 12, 68);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
