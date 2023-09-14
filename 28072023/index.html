@@ -31,6 +31,7 @@
 
     <!-- Cabeçalho da página-->
     <header>
+        <!-- Início do menu-->
 
         <!-- Cria uma seção de menu (navigation)-->
         <nav>
@@ -43,7 +44,7 @@
                 <!-- Tag a: possibilita que o texto seja clicável-->
                 <!-- href: determina o redirecionamento da página-->
                 <li><a href="#">Inicio</a></li>
-                <li><a href="sobremim.html"> Sobre mim </a> </li>
+                <li><a href="#sobremim"> Sobre mim </a> </li>
                 <li><a href="#servicos"> Soluções em TI </a></li>
                 <li><a href="contato.html"> Contato </a></li>
 
@@ -51,40 +52,118 @@
 
         </nav>
 
-
+        <!-- Fim do menu-->
 
         <!-- Divisão em parte menor, dentro de uma seção, identificada pela palvra "apresentação"-->
         <div class="apresentacao">
 
-            <div class="left"> 
-            <!-- Tag img: inserir imagem na página-->
-            <!-- width significa largura -->
-            <!-- height significa altura -->
-            <img src="img/lgpd2-1024x1024.png" width="50%" height="auto" alt="imagem com placa-mãe">
-        </div>
+            <div class="left">
+                <!-- Tag img: inserir imagem na página-->
+                <!-- width significa largura -->
+                <!-- height significa altura -->
+                <img src="img/lgpd2-1024x1024.png" width="50%" height="auto" alt="imagem com placa-mãe">
+            </div>
 
-        <div class="right">
-            <span> Soluções tecnológicas em </span>
+            <div class="right">
+                <span> Soluções tecnológicas em </span>
                 <h1>redes de computadores e desenvolvimento web</h1>
-            <button class="btn btnContact">Entre em contato</button>
-        </div>
+                <button class="btn btnContact">Entre em contato</button>
+            </div>
 
- 
+
         </div>
+        <!-- Fim da seção de apresentação-->
     </header>
 
+    <section id="sobremim">
+
+        <h3> Sobre mim</h3>
+
+        <div class="containerSobreMim">
+
+            <div class="left">
+                <h2>Nathan Raphael</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, pariatur enim. Incidunt temporibus
+                    debitis error, delectus pariatur quisquam nam magnam tenetur iusto deleniti, sed optio molestiae
+                    similique aliquam, nostrum fugit. </p>
+            </div>
+
+            <div class="right">
+                <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/wllXY322K7Q?si=zD9iOxYg1Lmuz-ki"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>-->
+
+                <!-- <video controls autoplay width="540" height="315">
+                        <source src="img/mike.mp4" type="video/mp4">
+                    </video> -->
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=5511992682158" target="_blank">
+                            <img src="img/redesSociais/whatsapp.png">
+                    </div>
+
+                    <div>
+                        <p>(11) 99268-2158</p>
+                    </div>
+                    </a>
+                </div>
+
+
+                <div class="socialMedia">
+                    <div>
+                         <a href="https://github.com/raphaelnathan21" target="_blank">
+                            <img src="img/redesSociais/github.png">
+                    </div>
+
+                    <div>
+                        <p>github.com/raphaelnathan21</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="https://www.linkedin.com/in/nathan-raphael-a06831266/" target="_blank">
+                            <img src="img/redesSociais/linkedin.png">
+                    </div>
+
+                    <div>
+                        <p>linkedin.com/in/nathan-raphael</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="mailto:nathan.martins2004@gmail.com">
+                            <img src="img/redesSociais/email.png">
+                    </div>
+
+                    <div>
+                        <p>nathan.martins2004@gmail.com</p>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 
 
 
+    <!-- Tags h1 a h6: níveis de importância no corpo do site-->
 
-        <!-- Tags h1 a h6: níveis de importância no corpo do site-->
+    <!-- Início da seção de serviços de computadores -->
 
-
+    <!-- Inicio da seção de serviços em desenvolvimento -->
     <section id="servicos">
         <h3>Assistência em redes de computadores</h3>
         <div class="containerServicos">
 
-            <div class="itemServico1"> 
+            <div class="itemServico1">
 
                 <img src="img/montagemPC/96px.png">
                 <h2>Montagem e manutenção de computadores</h2>
@@ -114,10 +193,13 @@
 
 
         </div>
+
+        <!-- Fim da seção de serviços em redes de computadores-->
+
         <h3>Desenvolvimento e implementação de aplicativos</h3>
         <div class="containerServicos">
 
-            <div class="itemServico5"> 
+            <div class="itemServico5">
 
                 <img src="img/prototipacao/96px.png">
                 <h2>Prototipação de aplicações</h2>
@@ -125,7 +207,7 @@
             </div>
 
             <div class="itemServico6">
-                
+
                 <img src="img/bancodedados/96px.png">
                 <h2>Estruturação e administração de banco de dados</h2>
 
@@ -142,30 +224,35 @@
 
                 <img src="img/desenvolversite/96px.png">
                 <h2>Desenvolvimento e hospedagem de sites</h2>
-                
+
             </div>
 
 
         </div>
+
+        <!-- Fim da seção de serviços em desenvolvimento-->
 
     </section>
 
     <!-- Tag hr: cria uma linha-->
     <!--<hr>-->
 
-   <!-- <h2>Sobre mim</h2> -->
+    <!-- <h2>Sobre mim</h2> -->
     <!---h3>Portfólio | Developer Nathan Raphael</h3>
     <h4>Portfólio | Developer Nathan Raphael</h4>
     <h5>Portfólio | Developer Nathan Raphael</h5>
     <h6>Portfólio | Developer Nathan Raphael</h6-->
 
     <!-- Tag p: Repesentar o parágrafo-->
-   <!-- <p>Olá, world</p> -->
+    <!-- <p>Olá, world</p> -->
 
     <!-- Tag footer: seção para identificar o rodapé-->
+
+    <!-- Início do rodapé-->
     <footer>
 
     </footer>
+    <!-- Fim do rodapé-->
 
 </body>
 

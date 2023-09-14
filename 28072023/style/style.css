@@ -166,5 +166,61 @@ h3 {
     color: white;
 }
 
+.containerSobreMim {
+    display: flex;
+    background-color: rgb(1, 0, 39);
+    padding-bottom: 50px;
+}
+
+.containerSobreMim .left {
+    color: white;
+    margin-right: 190px;
+    margin-left: 120px;
+    flex: 7;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    line-height: 30px;
+}
+
+.containerSobreMim .right {
+    flex: 3;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.right {
+    color: white;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia img {
+    width: 30px;
+}
+
+.left h2 {
+    margin-bottom: 10px;
+}
+
+.socialMedia p {
+    margin-left: 5px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.socialMedia a {
+    text-decoration: none;
+}
+
+.socialMedia p:hover {
+    color: blue;
+}
+
+
 
 
