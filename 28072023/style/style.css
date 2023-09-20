@@ -15,15 +15,18 @@ border-box
     box-sizing: border-box;
 }
 
+/*
 #menu {
     display: flex;
-    /*Selecionar o layout flexbox */
+    /*Selecionar o layout flexbox 
     list-style: none;
-    /*Tirar as bolinhas de cada item da lista*/
+    /*Tirar as bolinhas de cada item da lista
     padding: 25px;
     justify-content: center;
     margin-bottom: 25px;
 }
+*/
+
 
 #menu a {
     color: white;
@@ -43,12 +46,12 @@ border-box
 
 /* Quando passar o mouse */
 #menu a:hover {
-    color: rgb(238, 174, 202);
+    color: rgb(126, 203, 255);
 }
 
 header {
-    background: rgb(4,0,131);
-    background: linear-gradient(90deg, rgba(4,0,131,1) 0%, rgba(0,0,0,1) 66%);   
+    background: rgb(4, 0, 131);
+    background: linear-gradient(90deg, rgba(4, 0, 131, 1) 0%, rgba(0, 0, 0, 1) 66%);
     padding-bottom: 15px;
 }
 
@@ -56,7 +59,8 @@ header {
     display: flex;
 }
 
-h1, span {
+h1,
+span {
     font-size: 23px;
     color: white;
     font-family: 'Julius Sans One', sans-serif;
@@ -101,7 +105,7 @@ h2 {
 }
 
 .btnContact:hover {
-    background:rgb(89, 17, 224);
+    background: rgb(89, 17, 224);
     color: white;
 }
 
@@ -114,9 +118,13 @@ body {
     display: flex;
     justify-content: center;
     padding: 25px;
+    margin-top: -8px;
 }
 
-.itemServico1, .itemServico3, .itemServico6, .itemServico8 {
+.itemServico1,
+.itemServico3,
+.itemServico6,
+.itemServico8 {
     border: 1px solid rgba(7, 26, 107, 1);
     border-radius: 5px;
     margin: 15px;
@@ -126,7 +134,10 @@ body {
 
 }
 
-.itemServico2, .itemServico4, .itemServico5, .itemServico7 {
+.itemServico2,
+.itemServico4,
+.itemServico5,
+.itemServico7 {
     border: 1px solid rgb(0, 47, 255);
     border-radius: 5px;
     margin: 15px;
@@ -140,13 +151,19 @@ body {
     width: 60px;
 }
 
-.itemServico1:hover, .itemServico3:hover, .itemServico6:hover, .itemServico8:hover {
+.itemServico1:hover,
+.itemServico3:hover,
+.itemServico6:hover,
+.itemServico8:hover {
     border: 1px solid rgb(68, 0, 255);
     background: rgb(14, 0, 94);
     cursor: pointer;
 }
 
-.itemServico2:hover, .itemServico4:hover, .itemServico5:hover, .itemServico7:hover {
+.itemServico2:hover,
+.itemServico4:hover,
+.itemServico5:hover,
+.itemServico7:hover {
     border: 1px solid rgb(68, 0, 255);
     background: rgb(15, 0, 114);
     cursor: pointer;
@@ -159,7 +176,7 @@ html {
 h3 {
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
-    background:rgb(0, 12, 68);
+    background: rgb(0, 12, 68);
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 20px;
@@ -170,6 +187,7 @@ h3 {
     display: flex;
     background-color: rgb(1, 0, 39);
     padding-bottom: 50px;
+    margin-top: -8px;
 }
 
 .containerSobreMim .left {
@@ -195,7 +213,6 @@ h3 {
 
 .socialMedia {
     display: flex;
-    align-items: center;
 }
 
 .socialMedia img {
@@ -221,6 +238,94 @@ h3 {
     color: blue;
 }
 
+#contato {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(153deg, rgba(0, 0, 0, 1) 63%, rgba(4, 0, 131, 1) 98%);
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+}
 
+form {
+    font-size: 16px;
+    max-width: 500px;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
 
+input,
+textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
 
+.displayContato {
+    display: flex;
+}
+
+form h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mensagem {
+    margin-left: 60px;
+
+}
+
+textarea {
+    resize: none;
+    width: 350px;
+    height: 120px;
+}
+
+.mensagem input {
+    width: 170px;
+    font-size: 16px;
+    background: rgba(7, 26, 107, 1);
+    color: white;
+    cursor: pointer;
+    font-family: 'Julius Sans One', sans-serif;
+    border: black;
+
+}
+
+.mensagem input:hover {
+    background: rgb(89, 17, 224);
+}
+
+.mapa {
+    margin-left: 90px;
+}
+
+iframe {
+    border-radius: 5px;
+    margin-top: -30px;
+}
+
+.navColor {
+    justify-content: center;
+    background: rgb(4, 0, 131);
+    background: linear-gradient(90deg, rgba(4, 0, 131, 1) 0%, rgba(0, 0, 0, 1) 66%);
+}
+
+.container-fluid {
+    background: rgb(4, 0, 131);
+    background: linear-gradient(90deg, rgba(4, 0, 131, 1) 0%, rgba(0, 0, 0, 1) 66%);
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+.navbar-toggler {
+    border: 1px solid transparent;
+    margin: 7px;
+}
+
+.navbar {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
