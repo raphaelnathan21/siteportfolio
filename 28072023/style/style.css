@@ -239,8 +239,7 @@ h3 {
 }
 
 #contato {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(153deg, rgba(0, 0, 0, 1) 63%, rgba(4, 0, 131, 1) 98%);
+   background: rgb(0, 0, 14);
     color: white;
     font-family: 'Julius Sans One', sans-serif;
 }
@@ -329,3 +328,6 @@ iframe {
 .navbar {
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
+
+
